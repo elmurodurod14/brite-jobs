@@ -19,7 +19,7 @@ body {
   padding: 30px;
   border-radius: 16px;
   box-shadow: 0 0 25px rgba(0, 0, 0, 0.4);
-  max-width: 400px;
+  max-width: 420px;
   width: 100%;
 }
 
@@ -30,51 +30,66 @@ body {
 
 h1 {
   margin-bottom: 10px;
-  font-size: 24px;
+  font-size: 22px;
   color: #000;
-  text-shadow: none;
 }
 
 p {
   margin-bottom: 20px;
   font-size: 16px;
   color: #000;
-  text-shadow: none;
 }
 
 .buttons {
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  gap: 30px;
+  flex-direction: column;
+  gap: 15px;
   margin-bottom: 30px;
 }
 
 .btn {
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  text-decoration: none;
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: transform 0.2s ease, box-shadow 0.3s ease;
-  font-size: 28px;
+  gap: 10px;
+  border: 2px solid transparent;
+  border-radius: 40px;
+  padding: 14px 20px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #fff;
+  text-decoration: none;
+  transition: transform 0.2s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.btn img {
+  height: 20px;
+  width: 20px;
 }
 
 .btn:hover {
-  transform: scale(1.1);
-  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(255,255,255,0.4);
 }
 
 .telegram {
-  background-color: #0088cc;
-  color: #fff;
+  background: linear-gradient(135deg, #1c9dea, #209cee);
+  border-color: #1c9dea;
+  box-shadow: 0 0 10px rgba(28,157,234,0.3);
+}
+
+.telegram:hover {
+  box-shadow: 0 0 20px rgba(28,157,234,0.7);
 }
 
 .whatsapp {
-  background-color: #25D366;
-  color: #fff;
+  background: linear-gradient(135deg, #25d366, #1ebc5b);
+  border-color: #1ebc5b;
+  box-shadow: 0 0 10px rgba(30,188,91,0.3);
+}
+
+.whatsapp:hover {
+  box-shadow: 0 0 20px rgba(30,188,91,0.7);
 }
 
 .manager {
@@ -94,12 +109,10 @@ p {
   margin: 0;
   font-size: 18px;
   color: #000;
-  text-shadow: none;
 }
 
 .manager-info p {
   margin: 0;
   font-size: 14px;
   color: #000;
-  text-shadow: none;
 }
