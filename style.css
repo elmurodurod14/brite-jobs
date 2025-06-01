@@ -14,7 +14,8 @@ body {
 
 .container {
   text-align: center;
-  background: rgba(48, 48, 48, 0.92);
+  background: url('inside.webp') no-repeat center center;
+  background-size: cover;
   padding: 30px;
   border-radius: 16px;
   box-shadow: 0 0 25px rgba(0, 0, 0, 0.4);
@@ -30,12 +31,14 @@ body {
 h1 {
   margin-bottom: 10px;
   font-size: 24px;
+  text-shadow: 0 0 6px rgba(0,0,0,0.6);
 }
 
 p {
   margin-bottom: 20px;
   font-size: 16px;
-  color: #ccc;
+  color: #eee;
+  text-shadow: 0 0 5px rgba(0,0,0,0.4);
 }
 
 .buttons {
@@ -89,10 +92,12 @@ p {
   margin: 0;
   font-size: 18px;
   color: #fff;
+  text-shadow: 0 0 4px rgba(0,0,0,0.4);
 }
 
 .manager-info p {
   margin: 0;
   font-size: 14px;
   color: #ccc;
+  text-shadow: 0 0 4px rgba(0,0,0,0.3);
 }
