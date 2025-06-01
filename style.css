@@ -2,7 +2,7 @@
 body {
   margin: 0;
   font-family: 'Inter', sans-serif;
-  background: url('https://www.transparenttextures.com/patterns/marble.png') repeat;
+  background: radial-gradient(circle at top left, #2e2b3f, #1a1a2e);
   color: #f1f1f1;
   display: flex;
   align-items: center;
