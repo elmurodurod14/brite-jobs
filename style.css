@@ -1,63 +1,101 @@
 
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
-  background: #f4f4f4;
+  font-family: 'Inter', sans-serif;
+  background: #1a1a2e;
+  color: #f1f1f1;
   display: flex;
   align-items: center;
   justify-content: center;
   height: 100vh;
+  padding: 20px;
 }
 
 .container {
   text-align: center;
-  background: white;
+  background: #2a2a40;
   padding: 30px;
-  border-radius: 12px;
-  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+  border-radius: 16px;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.3);
+  max-width: 400px;
+  width: 100%;
 }
 
 .logo {
-  max-width: 120px;
+  max-width: 100px;
   margin-bottom: 20px;
 }
 
 h1 {
   margin-bottom: 10px;
+  font-size: 24px;
 }
 
 p {
   margin-bottom: 20px;
+  font-size: 16px;
+  color: #ccc;
 }
 
 .buttons {
   display: flex;
   flex-direction: column;
   gap: 15px;
+  margin-bottom: 30px;
 }
 
 .btn {
   padding: 12px 20px;
-  border: none;
   border-radius: 8px;
   text-decoration: none;
   font-size: 16px;
+  font-weight: 600;
   color: white;
-  transition: background 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
 }
 
-.telegram { background-color: #0088cc; }
-.telegram:hover { background-color: #0077b6; }
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
 
-.whatsapp { background-color: #25D366; }
-.whatsapp:hover { background-color: #1ebe5b; }
+.telegram {
+  background-color: #6c63ff;
+}
+
+.whatsapp {
+  background-color: #25D366;
+}
+
+.email {
+  background-color: #a64ac9;
+}
 
 .manager {
-  margin-top: 30px;
+  text-align: center;
 }
 
 .manager-photo {
-  max-width: 150px;
+  width: 90px;
+  height: 90px;
+  object-fit: cover;
   border-radius: 50%;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  border: 2px solid #6c63ff;
+  margin-bottom: 10px;
+}
+
+.manager-info h2 {
+  margin: 0;
+  font-size: 18px;
+  color: #fff;
+}
+
+.manager-info p {
+  margin: 0;
+  font-size: 14px;
+  color: #ccc;
 }
