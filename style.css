@@ -13,7 +13,8 @@ body {
 
 .container {
   text-align: center;
-  background: #3a3a3a;
+  background: url('shutterstock_490194529-smaller.8894a5fecdad3c67adcdddfdfa992346.webp') no-repeat center center;
+  background-size: cover;
   padding: 30px;
   border-radius: 16px;
   box-shadow: 0 0 25px rgba(0, 0, 0, 0.3);
@@ -34,7 +35,8 @@ h1 {
 p {
   margin-bottom: 20px;
   font-size: 16px;
-  color: #ccc;
+  color: #eee;
+  text-shadow: 0 0 5px rgba(0,0,0,0.4);
 }
 
 .buttons {
@@ -56,6 +58,7 @@ p {
   justify-content: center;
   gap: 10px;
   transition: transform 0.2s ease, box-shadow 0.3s ease;
+  background-blend-mode: overlay;
 }
 
 .btn:hover {
@@ -88,10 +91,12 @@ p {
   margin: 0;
   font-size: 18px;
   color: #fff;
+  text-shadow: 0 0 5px rgba(0,0,0,0.4);
 }
 
 .manager-info p {
   margin: 0;
   font-size: 14px;
-  color: #ccc;
+  color: #ddd;
+  text-shadow: 0 0 4px rgba(0,0,0,0.4);
 }
